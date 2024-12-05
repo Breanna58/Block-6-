@@ -1,0 +1,100 @@
+</body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="styles.css">
+   
+
+<!-- Code injected by live-server -->
+<script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+        (function () {
+            function refreshCSS() {
+                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                    }
+                    parent.appendChild(elem);
+                }
+            }
+            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+            var address = protocol + window.location.host + window.location.pathname + '/ws';
+            var socket = new WebSocket(address);
+            socket.onmessage = function (msg) {
+                if (msg.data == 'reload') window.location.reload();
+                else if (msg.data == 'refreshcss') refreshCSS();
+            };
+            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                console.log('Live reload enabled.');
+                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+            }
+        })();
+    }
+    else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+</script>
+</head>
+<h1>MY VERY ORGANIZED GROCERY LIST
+</h1>
+<body>
+
+<section class="section-one">
+    <ol>
+    <h2>Vegetables</h2>
+    <li>Brocolli</li> 
+    <li>Spinach</li>
+    <li>Carrots</li>
+
+  </ol>
+</section>
+
+<section class="section-two">
+    <ol>
+
+        <h2>Protein</h2>
+    <li>Fish</li>
+    <li>Steak</li>
+    <li>Chicken</li>
+    </ol>
+</section>
+
+<img src="https://images.unsplash.com/photo-1597417175478-c161c1788242?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RlYWt8ZW58MHx8MHx8fDA%3D" alt="protein" width= "150" />
+
+<section class="section-three">
+    <ol>
+        <h2>Snacks</h2>
+        <li>Ice cream</li>
+        <li>Chips</li>
+        <li>Chocolate</li>
+    </ol>
+</section>
+
+<section class="section-four">
+<ol>
+    <h2>Fruit</h2>
+    <li>Apples</li>
+    <li>Blueberries</li>
+    <li>Straberries </li>     
+
+</ol>
+</section>
+
+<img src="https://plus.unsplash.com/premium_photo-1700072294433-c3a7c35d1f2d?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt "apples" width="150" />
+</html>
+
+
+git initial-scal
+git add . 
+git commit -m "initial commit"
